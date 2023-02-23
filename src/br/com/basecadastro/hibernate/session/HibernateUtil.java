@@ -15,7 +15,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.engine.SessionFactoryImplementor;
 
 /**
- * Responsavel por estabelecer a conexão do hibernate
+ * Responsavel por estabelecer a conexÃ£o do hibernate
  * 
  */
 @ApplicationScoped
@@ -30,7 +30,7 @@ public class HibernateUtil implements Serializable {
 	private static SessionFactory sessionFactory = buildSessionFactory();
 
 	/**
-	 * Responsável por ler o arquivo de configuração hibernate.cfg.xml
+	 * Responsavel por ler o arquivo de configuracao hibernate.cfg.xml
 	 * 
 	 * @return SessionFactory
 	 */
@@ -42,8 +42,8 @@ public class HibernateUtil implements Serializable {
 			return sessionFactory;
 
 		} catch (Exception e) {
-			logger.info("Erro ao criar conexão SessionFactory", e);
-			throw new ExceptionInInitializerError("Erro ao criar conexão SessionFactory");
+			logger.info("Erro ao criar conexao SessionFactory", e);
+			throw new ExceptionInInitializerError("Erro ao criar conexï¿½o SessionFactory");
 		}
 	}
 
@@ -57,7 +57,7 @@ public class HibernateUtil implements Serializable {
 	}
 
 	/**
-	 * Retonar a sessão do SessionFactory
+	 * Retonar a sessï¿½o do SessionFactory
 	 * 
 	 * @return Session
 	 */
@@ -66,7 +66,7 @@ public class HibernateUtil implements Serializable {
 	}
 
 	/**
-	 * Abre uma nova sessão no SessionFactory
+	 * Abre uma nova sessao no SessionFactory
 	 * 
 	 * @return Session
 	 */
@@ -77,7 +77,7 @@ public class HibernateUtil implements Serializable {
 	}
 
 	/**
-	 * Obtem a conection do provedor de conexões configurado
+	 * Obtem a conection do provedor de conexoes configurado
 	 * 
 	 * @return Connection
 	 * @throws SQLException

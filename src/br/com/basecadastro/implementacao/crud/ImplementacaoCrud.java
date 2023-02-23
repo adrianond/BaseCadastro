@@ -347,7 +347,7 @@ public class ImplementacaoCrud<T> implements InterfaceCrud<T> {
 	}
 
 	/**
-	 * Retorna sessão corrente
+	 * Retorna sessao corrente
 	 */
 	@Override
 	public Session getSession() {
@@ -480,7 +480,7 @@ public class ImplementacaoCrud<T> implements InterfaceCrud<T> {
 	}
 
 	/**
-	 * Limpa a sessão corrente
+	 * Limpa a sessao corrente
 	 */
 	@Override
 	public void clearSession() {
@@ -488,7 +488,7 @@ public class ImplementacaoCrud<T> implements InterfaceCrud<T> {
 	}
 
 	/**
-	 * Inicia a sessão caso não exista
+	 * Inicia a sessao caso nao exista
 	 */
 	private void validaSessionFactory() {
 		if (sessionFactory == null) {
